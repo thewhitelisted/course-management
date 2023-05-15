@@ -1,28 +1,37 @@
+// IO stuff, handling loading in files and data from fs
+// also used to reset cache etc. WHICH I NEED TO ADD
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FileIO {
+    // func importCourses, returns a list of Courses that can be loaded into the listView
     public static List<Course> importCourses (){
+        // create new obj for return statement
         List<Course> courses= new ArrayList<>();
         try {
-            FileReader fr = new FileReader("courseList.txt");
-            BufferedReader br = new BufferedReader(fr);
+            // creates a list that stores the names of all the courses.name from courseList.txt
             List<String> courseList = store();
 
-            for (int i = 0; i < courseList.size(); i++) {
-                courses.add(loadCourse(br.readLine()));
+            // for every value in courseList, load the course
+            for (String s : courseList) {
+                courses.add(loadCourse(s));
             }
         } catch (IOException e) {
             e.printStackTrace();
         }
+        // return statement
         return courses;
     }
 
+    // func loadCourse, returns Course, param String name
     public static Course loadCourse(String name) {
+        // checks if there is a file with the name: name.dat
         try (FileInputStream fis = new FileInputStream(name+".dat")) {
             ObjectInputStream ois = new ObjectInputStream(fis);
 
+            // returns the obj read from the file
             return (Course) ois.readObject();
         } catch (IOException | ClassNotFoundException ex) {
             ex.printStackTrace();
@@ -30,17 +39,22 @@ public class FileIO {
         }
     }
 
+    // func store, returns List<String>. returns list of names in courseList.txt
     public static List<String> store() throws IOException {
+        // setup for buffered reader
         FileReader fr = new FileReader("courseList.txt");
         BufferedReader br = new BufferedReader(fr);
 
         String line;
-        List<String> passwordList = new ArrayList<>();
+        List<String> courseList = new ArrayList<>();
+
+        // while there are lines to be read, read and add to list
         while ((line = br.readLine()) != null) {
-            passwordList.add(line);
+            courseList.add(line);
         }
         fr.close();
         br.close();
-        return passwordList;
+        // return statement
+        return courseList;
     }
 }

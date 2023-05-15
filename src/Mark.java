@@ -1,3 +1,6 @@
+// obj Mark, contained in obj Course
+// has name, value
+
 public class Mark {
     String name;
     double value;
