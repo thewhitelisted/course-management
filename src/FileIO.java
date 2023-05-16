@@ -6,6 +6,29 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class FileIO {
+    // func exportCourses, returns void, param list of courses. exports all courses to a .dat file
+    public static void exportCourses(List<Course> courses){
+        try (FileOutputStream fs = new FileOutputStream("courseList.txt")){
+            List<String> courseList = store();
+
+            for (Course course : courses) {
+                fs.write(course.name.getBytes());
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        for (Course course : courses) {
+            try (FileOutputStream fos = new FileOutputStream(course.name + ".dat")) {
+                ObjectOutputStream oos = new ObjectOutputStream(fos);
+
+                oos.writeObject(course);
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
     // func importCourses, returns a list of Courses that can be loaded into the listView
     public static List<Course> importCourses (){
         // create new obj for return statement
