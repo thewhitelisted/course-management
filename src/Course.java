@@ -1,6 +1,7 @@
 // obj Course
 // has name, code, and a list of marks
 
+import java.io.Serial;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;

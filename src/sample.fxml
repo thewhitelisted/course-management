@@ -85,7 +85,7 @@
                         <Font name="Monospaced Regular" size="16.0" />
                      </font>
                   </Label>
-                  <ListView fx:id="markListView" maxWidth="-Infinity" prefHeight="391.0" prefWidth="193.0" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="500.0" AnchorPane.topAnchor="101.0" />
+                  <ListView fx:id="markListView" maxWidth="-Infinity" prefHeight="392.0" prefWidth="266.0" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="14.0" AnchorPane.topAnchor="101.0" />
                   <Label layoutX="14.0" layoutY="503.0" text="Add New Mark" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="14.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
@@ -106,12 +106,12 @@
                         <Font name="Monospaced Regular" size="12.0" />
                      </font>
                   </Button>
-                  <Label fx:id="markNameLabel" layoutX="216.0" layoutY="101.0" text="Mark Name: " wrapText="true" AnchorPane.rightAnchor="411.0" AnchorPane.topAnchor="101.0">
+                  <Label fx:id="markNameLabel" layoutX="288.0" layoutY="101.0" prefHeight="16.0" prefWidth="168.0" text="Mark Name: " wrapText="true" AnchorPane.leftAnchor="288.0" AnchorPane.rightAnchor="253.0" AnchorPane.topAnchor="101.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
                      </font>
                   </Label>
-                  <Label fx:id="markValueLabel" layoutX="216.0" layoutY="201.0" text="Value: " AnchorPane.rightAnchor="440.0" AnchorPane.topAnchor="201.0">
+                  <Label fx:id="markValueLabel" layoutX="288.0" layoutY="199.0" prefHeight="16.0" prefWidth="209.0" text="Value: " AnchorPane.leftAnchor="288.0" AnchorPane.rightAnchor="267.0" AnchorPane.topAnchor="199.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
                      </font>

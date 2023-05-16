@@ -3,16 +3,14 @@
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
-
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
 
 public class FileIO {
     // func exportCourses, returns void, param list of courses. exports all courses to a .dat file
-    public static void exportCourses(List<Course> courses){
+    public static void exportCourses(ObservableList<Course> courses){
         try (FileOutputStream fs = new FileOutputStream("courseList.txt")){
-            List<String> courseList = store();
 
             for (Course course : courses) {
                 fs.write(course.name.getBytes());

@@ -14,6 +14,16 @@ public class Main extends Application {
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("sample.fxml")));
         Scene scene = new Scene(root);
 
+        Course course = new Course("Math", "MHF");
+        ObservableList<Course> courses = FXCollections.observableArrayList();
+
+        courses.add(course);
+        courses.get(0).addMark(new Mark("CPT", 90.8));
+
+        FileIO.exportCourses(courses);
+
+
+
         stage.setTitle("Course Manager");
         stage.setScene(scene);
 
