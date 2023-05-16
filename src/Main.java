@@ -20,6 +20,11 @@ public class Main extends Application {
         courses.add(course);
         courses.get(0).addMark(new Mark("CPT", 90.8));
 
+        Course monk = new Course("English", "ENG");
+
+        courses.add(monk);
+        courses.get(1).addMark(new Mark("CPT", 92.8));
+
         FileIO.exportCourses(courses);
 
 

@@ -12,8 +12,9 @@ public class FileIO {
     public static void exportCourses(ObservableList<Course> courses){
         try (FileOutputStream fs = new FileOutputStream("courseList.txt")){
 
+            String newLine = System.lineSeparator();
             for (Course course : courses) {
-                fs.write(course.name.getBytes());
+                fs.write((course.name + newLine).getBytes());
             }
         } catch (IOException e) {
             e.printStackTrace();
@@ -37,10 +38,11 @@ public class FileIO {
         try {
             // creates a list that stores the names of all the courses.name from courseList.txt
             List<String> courseList = store();
-
+            System.out.println(courseList);
             // for every value in courseList, load the course
-            for (String s : courseList) {
-                courses.add(loadCourse(s));
+            for (int s = 0; s < courseList.size(); s++) {
+                System.out.println(s);
+                courses.add(loadCourse(courseList.get(s)));
             }
         } catch (IOException e) {
             e.printStackTrace();

@@ -88,9 +88,12 @@ public class Controller implements Initializable {
                     Course currentCourse = courseSelectListView.getSelectionModel().getSelectedItem();
                     courseLabel.setText("Course: " + currentCourse.name);
                     courseCodeLabel.setText("Course Code: " + currentCourse.code);
+                    markNameLabel.setText("Mark Name: ");
+                    markValueLabel.setText("Value: ");
 
                     System.out.println(currentCourse.marks);
                     ObservableList<Mark> markList = createMarkList(currentCourse);
+                    markListView.getItems().clear();
                     markListView.getItems().addAll(markList);
                     System.out.println(markList);
                     markListView.setCellFactory(new Callback<ListView<Mark>, ListCell<Mark>>() {
@@ -118,11 +121,14 @@ public class Controller implements Initializable {
                             markValueLabel.setText("Value: " + currentMark.value);
                         }
                     });
+
                 }
             });
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+        courseSelectListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
+        markListView.getSelectionModel().setSelectionMode(SelectionMode.SINGLE);
     }
 
     @FXML
