@@ -1,6 +1,9 @@
 // IO stuff, handling loading in files and data from fs
 // also used to reset cache etc. WHICH I NEED TO ADD
 
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
+
 import java.io.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -30,9 +33,9 @@ public class FileIO {
     }
 
     // func importCourses, returns a list of Courses that can be loaded into the listView
-    public static List<Course> importCourses (){
+    public static ObservableList<Course> importCourses (){
         // create new obj for return statement
-        List<Course> courses= new ArrayList<>();
+        ObservableList<Course> courses= FXCollections.observableArrayList();
         try {
             // creates a list that stores the names of all the courses.name from courseList.txt
             List<String> courseList = store();

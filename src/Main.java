@@ -1,4 +1,6 @@
 import javafx.application.Application;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
@@ -11,6 +13,13 @@ public class Main extends Application {
     public void start(Stage stage) throws Exception{
         Parent root = FXMLLoader.load(Objects.requireNonNull(getClass().getResource("sample.fxml")));
         Scene scene = new Scene(root);
+
+        Course course = new Course ("Math", "fdaskf");
+        ObservableList<Course> courses = FXCollections.observableArrayList();
+
+        courses.add(course);
+
+        FileIO.exportCourses(courses);
 
         stage.setTitle("Course Manager");
         stage.setScene(scene);

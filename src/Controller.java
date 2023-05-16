@@ -1,10 +1,11 @@
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.Button;
-import javafx.scene.control.Label;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
+import javafx.util.Callback;
 
+import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
@@ -59,6 +60,33 @@ public class Controller implements Initializable {
 
     @Override
     public void initialize(URL url, ResourceBundle resourceBundle) {
+        try{
+            ObservableList<Course> courseList = createCourseList();
+            courseSelectListView.getItems().addAll(courseList);
 
+            courseSelectListView.setCellFactory(new Callback<ListView<Course>, ListCell<Course>>() {
+                @Override
+                public ListCell<Course> call(ListView<Course> courseListView) {
+                    return new ListCell<Course>() {
+                        @Override
+                        protected void updateItem(Course item, boolean empty) {
+                            super.updateItem(item, empty);
+                            if (empty || item == null) {
+                                setText(null);
+                            } else {
+                                setText(item.getName());
+                            }
+                        }
+                    };
+                }
+            });
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
+
+    @FXML
+    public ObservableList<Course> createCourseList() {
+        return FileIO.importCourses();
     }
 }
