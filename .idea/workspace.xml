@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be2533d-6591-4084-851c-2ee27920ecc5" name="Changes" comment="added export feature in FileIO.java">
+    <list default="true" id="6be2533d-6591-4084-851c-2ee27920ecc5" name="Changes" comment="lots of variables in Controller.java, updated ui in sample.fxml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -99,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684201073524</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lots of variables in Controller.java, updated ui in sample.fxml">
+      <created>1684203325027</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1684203325027</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -108,7 +114,8 @@
     <MESSAGE value="did a bunch of stuff im tired" />
     <MESSAGE value="fixed window issue" />
     <MESSAGE value="added export feature in FileIO.java" />
-    <option name="LAST_COMMIT_MESSAGE" value="added export feature in FileIO.java" />
+    <MESSAGE value="lots of variables in Controller.java, updated ui in sample.fxml" />
+    <option name="LAST_COMMIT_MESSAGE" value="lots of variables in Controller.java, updated ui in sample.fxml" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/course_management$Main.ic" NAME="Main Coverage Results" MODIFIED="1684190458561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
