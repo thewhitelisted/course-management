@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6be2533d-6591-4084-851c-2ee27920ecc5" name="Changes" comment="loading marks into ui and fixed some bugs">
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/lib.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/lib.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/FileIO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/FileIO.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample.fxml" afterDir="false" />
-    </list>
+    <list default="true" id="6be2533d-6591-4084-851c-2ee27920ecc5" name="Changes" comment="changed ui a bit" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +130,14 @@
       <option name="project" value="LOCAL" />
       <updated>1684276700841</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="changed ui a bit">
+      <created>1684285981629</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1684285981629</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
@@ -150,7 +149,8 @@
     <MESSAGE value="lots of variables in Controller.java, updated ui in sample.fxml" />
     <MESSAGE value="loading in courses in ui" />
     <MESSAGE value="loading marks into ui and fixed some bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="loading marks into ui and fixed some bugs" />
+    <MESSAGE value="changed ui a bit" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed ui a bit" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/course_management$Main.ic" NAME="Main Coverage Results" MODIFIED="1684190458561" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />

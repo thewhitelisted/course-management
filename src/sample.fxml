@@ -95,27 +95,27 @@
             </AnchorPane>
             <AnchorPane prefHeight="629.0" prefWidth="292.0">
                <children>
-                  <ListView fx:id="taskListView" prefHeight="447.0" prefWidth="235.0" AnchorPane.bottomAnchor="137.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="45.0" />
-                  <TextField fx:id="taskNameField" prefHeight="25.0" prefWidth="235.0" promptText="Task Name" AnchorPane.bottomAnchor="80.0" AnchorPane.rightAnchor="14.0">
+                  <ListView fx:id="taskListView" prefHeight="447.0" prefWidth="235.0" AnchorPane.bottomAnchor="137.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="14.0" AnchorPane.topAnchor="45.0" />
+                  <TextField fx:id="taskNameField" prefHeight="25.0" prefWidth="235.0" promptText="Task Name" AnchorPane.bottomAnchor="80.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="14.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
                      </font>
                   </TextField>
-                  <Button fx:id="createTaskButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Add Task" AnchorPane.bottomAnchor="14.0" AnchorPane.rightAnchor="14.0">
+                  <Button fx:id="createTaskButton" mnemonicParsing="false" prefHeight="25.0" prefWidth="235.0" text="Add Task" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="14.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
                      </font></Button>
-                  <Label text="Create New Task" AnchorPane.bottomAnchor="111.0" AnchorPane.rightAnchor="140.0">
+                  <Label text="Create New Task" AnchorPane.bottomAnchor="111.0" AnchorPane.leftAnchor="18.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="taskDetailsField" prefHeight="25.0" prefWidth="235.0" promptText="Task Details (Optional)" AnchorPane.bottomAnchor="49.0" AnchorPane.rightAnchor="14.0">
+                  <TextField fx:id="taskDetailsField" prefHeight="25.0" prefWidth="235.0" promptText="Task Details (Optional)" AnchorPane.bottomAnchor="49.0" AnchorPane.leftAnchor="18.0" AnchorPane.rightAnchor="14.0">
                      <font>
                         <Font name="Monospaced Regular" size="12.0" />
                      </font>
                   </TextField>
-                  <Label text="Tasks" underline="true" AnchorPane.rightAnchor="200.0" AnchorPane.topAnchor="14.0">
+                  <Label text="Tasks" underline="true" AnchorPane.leftAnchor="18.0" AnchorPane.topAnchor="14.0">
                      <font>
                         <Font name="Monospaced Regular" size="16.0" />
                      </font>
