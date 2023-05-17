@@ -38,10 +38,8 @@ public class FileIO {
         try {
             // creates a list that stores the names of all the courses.name from courseList.txt
             List<String> courseList = store();
-            System.out.println(courseList);
             // for every value in courseList, load the course
             for (int s = 0; s < courseList.size(); s++) {
-                System.out.println(s);
                 courses.add(loadCourse(courseList.get(s)));
             }
         } catch (IOException e) {

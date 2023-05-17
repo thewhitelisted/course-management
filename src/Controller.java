@@ -91,11 +91,10 @@ public class Controller implements Initializable {
                     markNameLabel.setText("Mark Name: ");
                     markValueLabel.setText("Value: ");
 
-                    System.out.println(currentCourse.marks);
                     ObservableList<Mark> markList = createMarkList(currentCourse);
                     markListView.getItems().clear();
                     markListView.getItems().addAll(markList);
-                    System.out.println(markList);
+
                     markListView.setCellFactory(new Callback<ListView<Mark>, ListCell<Mark>>() {
                         @Override
                         public ListCell<Mark> call(ListView<Mark> markListView) {
@@ -139,10 +138,7 @@ public class Controller implements Initializable {
     @FXML
     public ObservableList<Mark> createMarkList(Course course) {
         ObservableList<Mark> marks= FXCollections.observableArrayList();;
-        for (int i = 0; i < course.marks.size(); i++) {
-            marks.add(course.marks.get(i));
-            System.out.println(course.marks.get(i));
-        }
+        marks.addAll(course.marks);
         return marks;
     }
 }
